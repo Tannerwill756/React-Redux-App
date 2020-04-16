@@ -10,11 +10,15 @@ export const fetchStats = () => {
                 }
             })
             .then(response => {
-                console.log(response)
-                // dispatch({ type: 'FETCH_STATS_SUCCESS', payload: response})
+                dispatch({ type: 'FETCH_STATS_SUCCESS', payload: response.data})
+                dispatch({ type: 'FETCH_STATS_SUCCESS_2', payload: response.data.lifeTimeStats})
+                console.log('from axios call',response.data)
             })
             .catch(error => {
-                console.log('ERROR FETCHING DATA',error);
+                dispatch({
+                    type: 'FETCH_STATS_FAILURE',
+                    payload: `Error ${error}`
+                })
             })
     }
 }
