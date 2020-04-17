@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height:100vh;
+  max-width:1400px;
+  color:white;
+  margin: 0 auto;
+  border:1px solid black;
+}
+
+
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+
+
+.card{  
+  margin:0 auto;
+  width:800px;
+  background:rgba(178, 189, 178, 0.3);
+  
+  
+}
+
+.anotherCard{
+  margin-top:10%;
+}
+
+
